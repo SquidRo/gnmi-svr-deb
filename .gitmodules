@@ -1,0 +1,3 @@
+[submodule "my_gnmi_server"]
+	path = my_gnmi_server
+	url = https://github.com/SquidRo/my_gnmi_server
