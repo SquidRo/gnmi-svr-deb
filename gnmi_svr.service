@@ -5,7 +5,7 @@ After=updategraph.service swss.service
 
 [Service]
 Type=idle
-ExecStart=/usr/local/bin/gnmi_server [::]:5001
+ExecStart=/usr/bin/gnmi_server [::]:5001
 Restart=always
 RestartSec=30
 
