@@ -1,3 +1,5 @@
 #!/bin/bash
 
 systemctl enable gnmi_svr.service
+
+systemctl start gnmi_svr.service
