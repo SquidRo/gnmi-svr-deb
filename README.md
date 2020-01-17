@@ -6,7 +6,7 @@ Steps to install gnmi-svr on DUT
   1. apt-get install python-stdeb
   2. git clone https://github.com/SquidRo/gnmi-svr-deb 
   3. cd gnmi-svr-deb; ./build_deb.sh
-  4. copy ../python-gnmi-svr_0.101_all.deb to DUT
+  4. copy python-gnmi-svr_0.101_all.deb to DUT
 ```
 - On DUT 
 ```
