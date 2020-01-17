@@ -11,6 +11,8 @@ if os.path.exists(wdir):
     desc_str = 'git hash [ %s ]' % git_hash.strip()
 
 dependencies = [
+    'grpcio',
+    'protobuf',
     'pyangbind',
 ]
 
