@@ -12,7 +12,6 @@ if os.path.exists(wdir):
 
 dependencies = [
     'grpcio',
-    'protobuf',
     'pyangbind',
 ]
 
