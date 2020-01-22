@@ -1,6 +1,8 @@
 #!/bin/bash
 
-git submodule update
+. chk_subm.sh
+
+chk_subm "$@"
 
 cd build
 
