@@ -1,5 +1,8 @@
 #!/bin/bash
 
+PKG_NAM=`sed -n -e "s/ *name *= *['\"]\([^']*\)['\"][ ]*,/\1/p" setup.py`
+PKG_VER=`sed -n -e "s/ *version *= *['\"]\([^']*\)['\"][ ]*,/\1/p" setup.py`
+
 . chk_subm.sh
 
 chk_subm "$@"
@@ -8,6 +11,8 @@ cd build
 
 python setup.py --command-packages=stdeb.command debianize
 
-tar czvf ../gnmi-svr_0.1.orig.tar.gz .
+tar czvf ../${PKG_NAM}_${PKG_VER}.orig.tar.gz .
+
+cp postinst debian/python-${PKG_NAM}.postinst
 
 dpkg-buildpackage
